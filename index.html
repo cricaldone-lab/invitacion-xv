@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XV Bian</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- PORTADA -->
+    <section class="portada">
+
+        <div class="oscuro"></div>
+
+        <div class="contenido-portada">
+
+            <p class="bienvenida">
+                UNA FECHA MUY ESPECIAL
+            </p>
+
+            <h1>
+                Cumple de
+                <span>BIAN</span>
+            </h1>
+
+            <p class="fecha">
+                25 · SEPTIEMBRE
+            </p>
+
+            <a href="#contador" class="boton">
+                DESCUBRIR
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CUENTA REGRESIVA -->
+    <section id="contador" class="seccion contador-section">
+
+        <p class="mini-titulo">
+            FALTA MUY POQUITO
+        </p>
+
+        <h2>
+            Para su cumpleaños
+        </h2>
+
+        <div class="contador">
+
+            <div>
+                <span id="dias">00</span>
+                <p>DÍAS</p>
+            </div>
+
+            <div>
+                <span id="horas">00</span>
+                <p>HORAS</p>
+            </div>
+
+            <div>
+                <span id="minutos">00</span>
+                <p>MINUTOS</p>
+            </div>
+
+            <div>
+                <span id="segundos">00</span>
+                <p>SEGUNDOS</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FRASE -->
+    <section class="frase">
+
+        <p>
+            “Mientras uno esta vivo uno debe amar lo mas que pueda.”
+        </p>
+
+    </section>
+
+
+    <!-- FOTO GRANDE -->
+    <section class="foto-grande foto1"></section>
+
+
+    <!-- MENSAJE -->
+    <section class="seccion mensaje">
+
+        <p class="mini-titulo">
+            PARA VOS
+        </p>
+
+        <h2>
+            Ubicacion del salon!
+        </h2>
+
+        <p class="texto">
+            <a href="https://maps.app.goo.gl/Aus546aNvkNWk3hY7?g_st=iw">link: https://maps.app.goo.gl/Aus546aNvkNWk3hY7?g_st=iw</a>
+        </p>
+
+        <div class="corazon">
+            ♡
+        </div>
+
+    </section>
+
+
+    <!-- GALERÍA -->
+    <section class="galeria-una-foto">
+
+    <img src="imgbian/BIANCA (37).jpg" alt="Foto de Bianca">
+
+</section>
+
+
+    <!-- FRASE 2 -->
+    <section class="frase frase-clara">
+
+        <p>
+            “Los mejores recuerdos no se planean,
+            simplemente suceden.”
+        </p>
+
+    </section>
+
+
+    <!-- FOTO CON TEXTO -->
+    <section class="foto-texto">
+
+        <div class="oscuro"></div>
+
+        <div class="foto-texto-contenido">
+
+            <p>
+                POR MUCHOS
+            </p>
+
+            <h2>
+                recuerdos más
+            </h2>
+
+            <span>♡</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARTA -->
+    <section class="seccion carta">
+
+        <p class="mini-titulo">
+            UNA PEQUEÑA CARTA
+        </p>
+
+        <h2>
+            Feliz cumpleaños
+        </h2>
+
+        <p>
+            ¡Qué emoción pensar que este momento finalmente llegó! Parece que fue ayer cuando Bianca era una nena y hoy la vemos cumplir 15, comenzar una etapa nueva y llena de sueños. Porque los mejores momentos se disfrutan mucho más cuando se comparten con amigos y personas especiales…
+
+        </p>
+
+        <p>
+           ¡Te esperamos para vivir juntos una noche inolvidable y celebrar los 15 de Bianca!
+        </p>
+
+        <h3>
+            Te quiero muchísimo ♡
+        </h3>
+
+    </section>
+
+
+    <!-- ÚLTIMA FOTO -->
+    <section class="ultima-foto">
+
+        <div class="oscuro"></div>
+
+        <div>
+
+            <p>
+                NOS VEMOS EL
+            </p>
+
+            <h2>
+                25
+            </h2>
+
+            <h3>
+                SEPTIEMBRE
+            </h3>
+
+        </div>
+
+    </section>
+<!-- CONFIRMAR ASISTENCIA -->
+<section class="asistencia" id="asistencia">
+
+    <div class="icono-sobre">
+        ✉
+    </div>
+
+    <h2>CONFIRMÁ TU ASISTENCIA</h2>
+
+    <!-- Cambia esta fecha por la que quieras -->
+    <p class="fecha-limite">
+        ANTES DEL 15 DE SEPTIEMBRE 2026
+    </p>
+
+
+    <form id="formAsistencia">
+
+        <!-- CANTIDAD DE PERSONAS -->
+        <div class="campo-principal">
+
+            <label for="cantidadPersonas">
+                NÚMERO DE PERSONAS A CONFIRMAR
+            </label>
+
+            <select id="cantidadPersonas" required>
+                <option value="">SELECCIONAR</option>
+                <option value="1">1 PERSONA</option>
+                <option value="2">2 PERSONAS</option>
+                <option value="3">3 PERSONAS</option>
+                <option value="4">4 PERSONAS</option>
+                <option value="5">5 PERSONAS</option>
+            </select>
+
+        </div>
+
+
+        <!-- AQUÍ JS CREARÁ LOS INVITADOS -->
+        <div id="listaInvitados"></div>
+
+
+        <!-- BOTÓN FINAL -->
+        <button type="submit" class="boton-confirmar">
+            CONFIRMAR ASISTENCIA
+        </button>
+
+    </form>
+
+
+    <!-- MENSAJE FINAL -->
+    <div id="mensajeEnviado" class="mensaje-enviado">
+        ♡ ¡Gracias por confirmar! ♡
+    </div>
+
+</section>
+
+    <footer>
+
+        Hecho con ♡  por chiara (la mejor hermana del mundo) 
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

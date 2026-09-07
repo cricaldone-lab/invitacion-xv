@@ -1,0 +1,820 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #f7f2ed;
+    color: #423b38;
+}
+
+
+/* PORTADA */
+
+.portada {
+    height: 100vh;
+
+    background-image: url("imgbian/BIANCA\ \(25\).jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.oscuro {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.contenido-portada {
+    position: relative;
+    z-index: 2;
+
+    padding: 20px;
+}
+
+.bienvenida {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.portada h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+.portada h1 span {
+    display: block;
+
+    font-size: 65px;
+    letter-spacing: 5px;
+
+    margin-top: 10px;
+}
+
+.fecha {
+    margin-top: 25px;
+
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.boton {
+    display: inline-block;
+
+    margin-top: 35px;
+    padding: 12px 28px;
+
+    border: 1px solid white;
+
+    text-decoration: none;
+    color: white;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: white;
+    color: #555;
+}
+
+
+/* SECCIONES */
+
+.seccion {
+    padding: 90px 20px;
+
+    text-align: center;
+}
+
+.mini-titulo {
+    font-size: 11px;
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+.seccion h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-weight: 400;
+    font-size: 45px;
+
+    margin-bottom: 40px;
+}
+
+
+/* CONTADOR */
+
+.contador-section {
+    background: #f7f2ed;
+}
+
+.contador {
+    max-width: 650px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.contador div {
+    border-right: 1px solid #c8beb7;
+}
+
+.contador div:last-child {
+    border-right: none;
+}
+
+.contador span {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 45px;
+}
+
+.contador p {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    margin-top: 5px;
+}
+
+
+/* FRASES */
+
+.frase {
+    padding: 100px 35px;
+
+    text-align: center;
+
+    background: #9b8177;
+
+    color: white;
+}
+
+.frase p {
+    max-width: 600px;
+
+    margin: auto;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    line-height: 1.4;
+}
+
+.frase-clara {
+    background: #ded1ca;
+
+    color: #514642;
+}
+
+
+/* FOTO GRANDE */
+
+.foto-grande {
+    height: 80vh;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.foto1 {
+    background-image: url("imgbian/BIANCA\ \(150\).jpg");
+}
+
+
+/* MENSAJE */
+
+.mensaje {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.texto {
+    max-width: 520px;
+
+    margin: auto;
+
+    line-height: 2;
+
+    font-size: 14px;
+}
+
+.corazon {
+    font-size: 35px;
+
+    margin-top: 35px;
+}
+
+
+/* GALERÍA */
+
+.galeria {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.galeria img {
+    width: 100%;
+    height: 500px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* FOTO CON TEXTO */
+
+.foto-texto {
+    min-height: 90vh;
+
+    background-image: url("imgbian/BIANCA\ \(110\).jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.foto-texto-contenido {
+    position: relative;
+
+    z-index: 2;
+}
+
+.foto-texto-contenido p {
+    font-size: 11px;
+
+    letter-spacing: 5px;
+}
+
+.foto-texto-contenido h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 55px;
+    font-weight: 400;
+
+    margin: 10px 0;
+}
+
+.foto-texto-contenido span {
+    font-size: 40px;
+}
+
+
+/* CARTA */
+
+.carta {
+    max-width: 680px;
+
+    margin: auto;
+}
+
+.carta p {
+    line-height: 2;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+.carta h3 {
+    margin-top: 40px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+
+    font-weight: normal;
+}
+
+
+/* ÚLTIMA FOTO */
+
+.ultima-foto {
+    height: 100vh;
+
+    background-image: url("imgbian/BIANCA\ \(73\).jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    text-align: center;
+}
+
+.ultima-foto > div:last-child {
+    position: relative;
+
+    z-index: 2;
+}
+
+.ultima-foto p {
+    letter-spacing: 5px;
+
+    font-size: 11px;
+}
+
+.ultima-foto h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 120px;
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+.ultima-foto h3 {
+    letter-spacing: 6px;
+
+    font-weight: 400;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 40px;
+
+    background: #514743;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .portada h1 {
+        font-size: 35px;
+    }
+
+    .portada h1 span {
+        font-size: 50px;
+    }
+
+    .contador span {
+        font-size: 32px;
+    }
+
+    .contador p {
+        font-size: 7px;
+    }
+
+    .frase p {
+        font-size: 26px;
+    }
+
+    .foto-grande {
+        height: 70vh;
+        background-attachment: scroll;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        height: 500px;
+    }
+
+    .ultima-foto h2 {
+        font-size: 100px;
+    }
+}
+
+/* ===================================
+   CONFIRMAR ASISTENCIA
+=================================== */
+
+.asistencia {
+    background: #2f2f2f;
+    color: white;
+
+    padding: 90px 6%;
+
+    text-align: center;
+}
+
+
+.icono-sobre {
+    font-size: 55px;
+
+    margin-bottom: 30px;
+
+    font-weight: 300;
+}
+
+
+.asistencia h2 {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 38px;
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+
+.fecha-limite {
+    font-size: 22px;
+
+    margin-bottom: 60px;
+
+    letter-spacing: 1px;
+}
+
+
+/* FORMULARIO */
+
+#formAsistencia {
+    max-width: 1000px;
+
+    margin: auto;
+
+    text-align: left;
+}
+
+
+/* SELECTOR DE PERSONAS */
+
+.campo-principal {
+    margin-bottom: 45px;
+}
+
+
+.campo-principal label {
+    display: block;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+
+.campo-principal select {
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid white;
+
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 23px;
+
+    padding: 12px 0;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+.campo-principal select option {
+    background: #333;
+    color: white;
+}
+
+
+/* TARJETA DE CADA INVITADO */
+
+.invitado {
+    margin-top: 50px;
+}
+
+
+.titulo-invitado {
+    font-size: 20px;
+
+    margin-bottom: 18px;
+
+    font-weight: 600;
+}
+
+
+/* CAJA GRIS */
+
+.tarjeta-invitado {
+    background: #777;
+
+    border-radius: 18px;
+
+    padding: 45px 50px;
+
+    margin-bottom: 35px;
+}
+
+
+/* CAMPOS */
+
+.grupo-campo {
+    margin-bottom: 45px;
+}
+
+
+.grupo-campo:last-child {
+    margin-bottom: 0;
+}
+
+
+.grupo-campo label {
+    display: block;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+
+.grupo-campo input,
+.grupo-campo select {
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid white;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-family: "Montserrat", sans-serif;
+
+    padding: 10px 0;
+
+    outline: none;
+}
+
+
+.grupo-campo input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+.grupo-campo select option {
+    color: white;
+
+    background: #555;
+}
+
+
+/* CONFIRMO / NO PUEDO */
+
+.opciones-asistencia {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin: 35px 0 45px;
+}
+
+
+.opcion-asistencia {
+    display: block;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.opcion-asistencia input {
+    position: absolute;
+
+    opacity: 0;
+}
+
+
+.opcion-asistencia span {
+    display: block;
+
+    border: 2px solid white;
+
+    border-radius: 40px;
+
+    text-align: center;
+
+    padding: 13px 20px;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+
+.opcion-asistencia input:checked + span {
+    background: white;
+
+    color: #555;
+}
+
+
+/* BOTÓN FINAL */
+
+.boton-confirmar {
+    width: 100%;
+
+    max-width: 500px;
+
+    display: block;
+
+    margin: 55px auto 0;
+
+    padding: 17px 25px;
+
+    background: transparent;
+
+    color: white;
+
+    border: 2px solid white;
+
+    border-radius: 50px;
+
+    font-size: 17px;
+
+    font-family: "Montserrat", sans-serif;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.boton-confirmar:hover {
+    background: white;
+
+    color: #333;
+}
+
+
+/* CONFIRMACIÓN */
+
+.mensaje-enviado {
+    display: none;
+
+    margin-top: 40px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .asistencia {
+        padding: 70px 20px;
+    }
+
+
+    .asistencia h2 {
+        font-size: 28px;
+    }
+
+
+    .fecha-limite {
+        font-size: 17px;
+
+        line-height: 1.6;
+    }
+
+
+    .campo-principal label {
+        font-size: 15px;
+    }
+
+
+    .campo-principal select {
+        font-size: 20px;
+    }
+
+
+    .tarjeta-invitado {
+        padding: 35px 25px;
+
+        border-radius: 15px;
+    }
+
+
+    .grupo-campo label {
+        font-size: 15px;
+    }
+
+
+    .grupo-campo input,
+    .grupo-campo select {
+        font-size: 18px;
+    }
+
+
+    .opcion-asistencia span {
+        font-size: 15px;
+    }
+
+}
+.grupo-campo textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+
+    padding: 8px 0 4px 0;
+
+    outline: none;
+    resize: none;
+
+    height: 55px;
+    min-height: 55px;
+
+    line-height: 1.3;
+}
+
+.grupo-campo textarea::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.galeria-una-foto {
+    width: 100%;
+    height: 90vh;
+}
+
+.galeria-una-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
