@@ -1,3 +1,22 @@
+// SIEMPRE ABRIR LA INVITACIÓN DESDE ARRIBA
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
+window.addEventListener("load", function () {
+
+    // Quita #contador de la dirección si quedó guardado
+    if (window.location.hash) {
+        history.replaceState(
+            null,
+            "",
+            window.location.pathname
+        );
+    }
+
+    // Lleva la página al principio
+    window.scrollTo(0, 0);
+});
 function obtenerProximoCumple() {
 
     const ahora = new Date();
