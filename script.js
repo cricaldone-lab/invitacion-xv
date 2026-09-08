@@ -1,22 +1,33 @@
-// SIEMPRE ABRIR LA INVITACIÓN DESDE ARRIBA
+// SIEMPRE ABRIR LA INVITACIÓN DESDE LA PORTADA
+
 if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
 }
 
+// Quitar #contador si quedó en la dirección
+if (window.location.hash) {
+    history.replaceState(null, "", window.location.pathname);
+}
+
+function volverArriba() {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant"
+    });
+}
+
+document.addEventListener("DOMContentLoaded", volverArriba);
+
 window.addEventListener("load", function () {
+    volverArriba();
 
-    // Quita #contador de la dirección si quedó guardado
-    if (window.location.hash) {
-        history.replaceState(
-            null,
-            "",
-            window.location.pathname
-        );
-    }
-
-    // Lleva la página al principio
-    window.scrollTo(0, 0);
+    // Algunos navegadores restauran la posición después de cargar
+    setTimeout(volverArriba, 100);
+    setTimeout(volverArriba, 500);
 });
+
+window.addEventListener("pageshow", volverArriba);
 function obtenerProximoCumple() {
 
     const ahora = new Date();
