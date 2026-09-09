@@ -239,7 +239,7 @@ function crearInvitado(numero) {
         <option value="Ninguno">NINGUNO</option>
         <option value="Vegetariano">VEGETARIANO</option>
         <option value="Vegano">VEGANO</option>
-        <option value="Sin gluten">SIN GLUTEN</option>
+        <option value="celiaco">SIN GLUTEN</option>
         <option value="Otro">OTRO</option>
 
     </select>
